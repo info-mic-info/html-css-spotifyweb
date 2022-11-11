@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 
@@ -15,7 +16,7 @@
 
 .sidebar{
     width: 30%;
-    background-color: red;
+    background-color: #000000;
 }
 
 
@@ -34,7 +35,7 @@ HEADER
 ****************************** */
 header{
     width: 100%;
-    background-color: black;
+    background-color:#080b12;
     color: white;
 }
 
@@ -44,7 +45,7 @@ MAIN
 ****************************** */
 main {
     width: 100%;
-    background-color: yellow;
+    background-color:#141922;
 }
 
 .menù ul{
@@ -59,7 +60,7 @@ main {
   FOOTER
   ****************************** */
   footer{
-      background-color: blue;
+      background-color: #282828;
   }
 
   .player{
