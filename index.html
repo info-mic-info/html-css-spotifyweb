@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify Web</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,17 +18,19 @@
 
         <div class="sidebar">
 
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <img src="./img/logo-small.svg" alt="">
+            </div>
 
             <div class="icon">
                 <ul>
-                    <li>lorem</li>
-                    <li>lorem</li>
-                    <li>lorem</li>
+                    <li><img src="./img/home.svg" alt=""></li>
+                    <li><img src="./img/search.svg" alt=""></li>
+                    <li> <img src="./img/libreria.svg" alt=""></li>
                 </ul>
             </div>
 
-            <div class="PLAYLIST">
+            <div class="playlist">
                 <ul>
                     <li>PLAYLIST</li>
                     <li>Crea playlist</li>
@@ -38,34 +43,102 @@
                     <li>Nuova Playlist</li>
                 </ul>
             </div>
+
+            <div class="account">
+                <ul>
+                    <li><img src="./img/download.svg" alt=""></li>
+                    <li><img src="./img/profile.svg" alt=""></li>
+                </ul>
+            </div>
         </div>
 
 
         <div class="hr+mn">
-            <header>EFFETTUA L'UPGRADE</header>
+            <header>
+                <a class="btn" href="">EFFETTUA L'UPGRADE</a>
+            </header>
             <main>
 
                 <!-- menù -->
                 <nav class="menù">
                     <ul>
-                        <li>IN EVIDENZIA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
+                        <li>
+                            <h5>IN EVIDENZIA</h5>
+                        </li>
+                        <li>
+                            <h5>PODCAST</h5>
+                        </li>
+                        <li>
+                            <h5>CLASSIFICHE</h5>
+                        </li>
+                        <li>
+                            <h5>GENERI E MOOD</h5>
+                        </li>
+                        <li>
+                            <h5>NUOVE USCITE</h5>
+                        </li>
+                        <li>
+                            <h5>SCOPRI</h5>
+                        </li>
                     </ul>
                 </nav>
 
                 <!-- Recently played -->
-                <section class="cards">
+                <section class="Recently played">
                     <h1>Recently played</h1>
-                    <div class="card">lorem</div>
-                    <div class="card">lorem</div>
-                    <div class="card">lorem</div>
-                    <div class="card">lorem</div>
-                    <div class="card">lorem</div>
-                    <div class="card">lorem</div>
+                    <div class="cards">
+
+                        <div class="card">
+                            <div class="content">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h6>Heavy Metal</h6>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h6>Heavy Metal</h6>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h6>Heavy Metal</h6>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h6>Heavy Metal</h6>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h6>Heavy Metal</h6>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h6>Heavy Metal</h6>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
                 </section>
 
                 <!-- Creato per John Doe -->
@@ -96,26 +169,58 @@
             </main>
         </div>
     </div>
+
+
+
+
     <footer>
         <div class="player">
-            <div class="col-25">lorem</div>
-            <div class="col-50">lorem</div>
-            <div class="col-25">lorem</div>
+            <div class="col-25">
+                <div class="content">
+                    <img src="./img/sinister.jpeg" alt="">
+                    <div class="title">
+                        <h6>Sinister</h6>
+                        <div class="info">
+                            <p>Brano</p>
+                            <p>Nome</p>
+                        </div>
+                    </div>
+                    <div class="favorites">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="play">
+                    <ul>
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-rotate-right"></i></li>
+                    </ul>
+                </div>
+
+                <div class="time">
+                    <ul>
+                        <li>0:25</li>
+                        <li class="load"></li>
+                        <li>4:35</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-25 volumes">
+                <ul>
+                    <li><i class="fa-regular fa-rectangle-list"></i></li>
+                    <li><i class="fa-solid fa-display"></i></li>
+                    <li><i class="fa-solid fa-volume-high"></i></li>
+                    <li class="load"></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- <img src="./img/download.svg" alt="">
-
-        <img src="./img/home.svg" alt="">
-
-        <img src="./img/libreria.svg" alt="">
-
-        <img src="./img/logo-small.svg" alt="">
-
-        <img src="./img/logo.svg" alt="">
-
-        <img src="./img/profile.svg" alt="">
-
-        <img src="./img/search.svg" alt=""> -->
     </footer>
 
 
