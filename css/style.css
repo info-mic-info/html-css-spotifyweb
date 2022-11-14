@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: solid 1px black; */
+    /* border: solid 1px white; */
 }
 
 
@@ -170,7 +170,6 @@ footer {
     width: 100vw;
     height: 100px;
     background-color: #282828;
-
 }
 
 .player {
@@ -181,20 +180,34 @@ footer {
 
 .col-25 {
     width: 25%;
+    height: 100%;
 }
 
 .col-50 {
     width: 50%;
+    height: 100px;
+   
+}
+
+.col-50 .barra-centrale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
     margin: auto 0;
 }
 
 .col-25 .content {
-    display: flex
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: auto 0 ;
 }
 
 .col-50 ul {
     display: flex;
     align-items: center;
+    
 }
 
 .play ul {
