@@ -23,13 +23,11 @@ SIDEBAR
 
 .sidebar {
     width: 100px;
-    /* height: calc(100vh - 100px); */
+    height: calc(100vh - 100px);
     background-color: #000000;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 
@@ -46,6 +44,7 @@ SIDEBAR
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px 10px;
 }
 
 .playlist {
@@ -56,9 +55,12 @@ SIDEBAR
     display: none;
 }
 
+.account {
+    width: 100%;
+}
+
 .sidebar span {
     display: none;
-
 }
 
 
@@ -66,12 +68,21 @@ SIDEBAR
 UTILITY
 ****************************** */
 
-i, h1, h6{
+i,
+h1,
+h6,
+h4 {
     color: white;
 }
 
-span, h5, p {
+span,
+h5,
+p {
     color: grey;
+}
+
+.advice {
+    text-align: start;
 }
 
 ul {
@@ -109,7 +120,7 @@ MAIN
 ****************************** */
 
 
-.hr-mn{
+.hr-mn {
     height: calc(100vh - 100px)
 }
 
@@ -119,7 +130,7 @@ main {
     background-color: #141922;
     padding: 10px;
     overflow: auto;
-    
+
 
 }
 
@@ -135,7 +146,7 @@ main {
 }
 
 .card {
-    
+
     width: 50%;
     padding: 5px;
 }
@@ -186,10 +197,10 @@ footer {
 .col-50 {
     width: 50%;
     height: 100px;
-   
+
 }
 
-.col-50 .barra-centrale{
+.col-50 .barra-centrale {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,14 +213,14 @@ footer {
     display: flex;
     align-items: center;
     height: 100px;
-    margin: auto 0 ;
+    margin: auto 0;
     padding: 20px;
 }
 
 .col-50 ul {
     display: flex;
     align-items: center;
-    
+
 }
 
 .play ul {
@@ -221,7 +232,7 @@ footer {
 
 }
 
-.time li{
+.time li {
     padding: 5px;
 }
 
@@ -229,7 +240,7 @@ footer {
     border-radius: 20px;
     width: 100%;
     height: 5px;
-    background-color: aqua;
+    background-color: grey;
 }
 
 .volumes ul {
@@ -247,7 +258,7 @@ footer {
     width: 50px;
 }
 
-.favorites{
+.favorites {
     display: flex;
     flex-direction: column;
 }
@@ -264,27 +275,43 @@ MEDIA QUERY
         width: 400px;
     }
 
-    
+
     .lungo {
         display: block;
+        padding: 20px 0;
     }
-    
+
     .playlist {
         display: block;
+        padding: 10px;
+    }
+
+    .playlist li{
+        padding: 10px 0;
     }
     
+    .playlist i {
+        font-size: 50px;
+        color: grey;
+    }
+
+    .flex {
+        align-items: center;
+    }
+
     .sidebar span {
         display: block;
     }
-    
+
     .lungo img {
         width: 200px;
     }
-    
+
     .logo {
         display: flex;
         justify-content: start;
     }
+
     .corto {
         display: none;
     }
@@ -299,25 +326,27 @@ MEDIA QUERY
         width: 400px;
     }
 
-    .card{
+    .card {
         width: 25%;
     }
 
-    .favorites{
+    .favorites {
         flex-direction: row;
     }
 
-    
+
 }
 
 
 /* Desktop */
-@media screen and (min-width: 1200x) {
+@media screen and (min-width: 1200px) {
 
     .sidebar {
         width: 400px;
     }
 
-
+    .card {
+        width: 10%;
+    }
 
 }
