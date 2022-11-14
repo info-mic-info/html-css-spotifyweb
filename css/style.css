@@ -195,6 +195,7 @@ footer {
     justify-content: center;
     height: 100px;
     margin: auto 0;
+    padding: 10px;
 }
 
 .col-25 .content {
@@ -202,6 +203,7 @@ footer {
     align-items: center;
     height: 100px;
     margin: auto 0 ;
+    padding: 20px;
 }
 
 .col-50 ul {
@@ -216,6 +218,11 @@ footer {
 
 .play li {
     margin: 0 10px;
+
+}
+
+.time li{
+    padding: 5px;
 }
 
 .load {
@@ -228,11 +235,13 @@ footer {
 .volumes ul {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .audio {
     margin: auto 0;
 }
+
 
 .col-25 img {
     width: 50px;
