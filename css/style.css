@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 
@@ -15,6 +15,9 @@
 /* ******************************
 SIDEBAR
 ****************************** */
+
+
+
 
 .sidebar {
     width: 100px;
@@ -34,7 +37,7 @@ SIDEBAR
 }
 
 .sidebar img {
-    width: 30%;
+    width: 40px;
 }
 
 .logo {
@@ -43,6 +46,18 @@ SIDEBAR
     justify-content: center;
 }
 
+.playlist {
+    display: none;
+}
+
+.lungo {
+    display: none;
+}
+
+.sidebar span {
+    display: none;
+
+}
 
 
 /* ******************************
@@ -198,24 +213,42 @@ MEDIA QUERY
 
 
 /* Tablet */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
 
-  
+    .sidebar {
+        width: 400px;
+    }
 
+    
+    .lungo {
+        display: block;
+    }
+    
+    .playlist {
+        display: block;
+    }
+    
     .sidebar span {
+        display: block;
+    }
+    
+    .lungo img {
+        width: 200px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: start;
+    }
+    .corto {
         display: none;
     }
 
-    .lungo{
-        display: block;
-    }
-
- }
+}
 
 
-/* landscape */
-
-@media screen and (max-width: 769px) {
+/* Landscape */
+@media screen and (min-width: 992px) {
 
     .sidebar {
         width: 400px;
@@ -224,6 +257,15 @@ MEDIA QUERY
 
 
 }
-  
 
-    
+
+/* Desktop */
+@media screen and (min-width: 1200x) {
+
+    .sidebar {
+        width: 400px;
+    }
+
+
+
+}
