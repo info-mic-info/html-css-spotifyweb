@@ -47,6 +47,10 @@ SIDEBAR
     padding: 5px 10px;
 }
 
+.color-grey img{
+color: grey;
+}
+
 .playlist {
     display: none;
 }
@@ -54,6 +58,27 @@ SIDEBAR
 .lungo {
     display: none;
 }
+
+/* questo */
+.sd-menù{
+    overflow-y: hidden; 
+}
+
+/* questo */
+.menù ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.scorrimento-playlist{
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+
 
 .account {
     width: 100%;
@@ -68,6 +93,22 @@ SIDEBAR
 UTILITY
 ****************************** */
 
+.border-radius{
+    border-radius: 100%;
+}
+
+.bkg-grey{
+    background-color: grey;
+}
+
+.color-grey{
+  filter: invert(28%);
+}
+
+.color-white{
+    color: white;
+}
+
 i,
 h1,
 h6,
@@ -80,6 +121,14 @@ h5,
 p {
     color: grey;
 }
+
+span:hover,
+h5:hover,
+p:hover {
+
+    color: white;
+
+    } 
 
 .advice {
     text-align: start;
@@ -98,7 +147,20 @@ ul {
     text-decoration: none;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 20px; 
+}
+
+.btn:hover{
+    font-size: 80%;
+}
+
+.border-sx{
+    border-left: 5px solid lightgreen;
+    padding-left: 5px;
+}
+
+.border-bt{
+    border-bottom: 5px solid lightgreen; ;
 }
 
 /* ******************************
@@ -125,20 +187,16 @@ MAIN
 }
 
 main {
-    /* height: calc(100vh - 180px); */
     height: calc(100vh - 180px);
     background-color: #141922;
     padding: 10px;
     overflow: auto;
-
-
 }
 
-.menù ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+.card img:hover{
+    background-image: url(https://fontawesome.com/icons/plus?s=solid&f=classic)
+  }
+
 
 .cards {
     display: flex;
@@ -181,6 +239,8 @@ footer {
     width: 100vw;
     height: 100px;
     background-color: #282828;
+    position: fixed;
+    bottom: 0;
 }
 
 .player {
@@ -243,10 +303,23 @@ footer {
     background-color: grey;
 }
 
+
+
+.load:hover {
+    border-radius: 20px;
+    width: 100%;
+    height: 5px;
+    background-color: greenyellow;
+}
+
 .volumes ul {
     display: flex;
     align-items: center;
     padding: 20px;
+}
+
+.volumes li{
+    padding: 0 10px;
 }
 
 .audio {
