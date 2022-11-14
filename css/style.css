@@ -98,7 +98,9 @@ UTILITY
     border-radius: 100%;
 }
 
-
+.playlist i:hover{
+    color: white;
+}
 
 .bkg-grey {
     background-color: grey;
@@ -106,6 +108,10 @@ UTILITY
 
 .color-grey {
     filter: invert(28%);
+}
+
+.color-grey:hover {
+filter: invert(0);
 }
 
 .color-white {
@@ -340,6 +346,10 @@ footer {
 
 }
 
+.big:hover{
+    font-size:  30px;
+}
+
 .time li {
     padding: 5px;
 }
@@ -394,27 +404,7 @@ footer {
     background-color: greenyellow;
 }
 
-.ball {
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: -5px;
-    left: 90px;
 
-
-}
-
-.ball:hover {
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: -5px;
-    left: 90px;
-    background-color: white;
-
-}
 
 .volumes {
     height: 100px;
