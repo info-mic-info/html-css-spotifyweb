@@ -8,7 +8,7 @@
 
 
 .mega-container {
-    display: flex; 
+    display: flex;
     position: relative;
 }
 
@@ -19,39 +19,29 @@ SIDEBAR
 .sidebar {
     width: 100px;
     /* height: calc(100vh - 100px); */
-    background-color: red;
+    background-color: blue;
     position: relative;
-
-}
-
-.sidebar .logo {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
+
 
 .sidebar li {
     display: flex;
-    justify-content: center;
+
 }
 
 .sidebar img {
     width: 30%;
 }
 
-/* .account {
-    width: 100%;
-    align-items: flex-end;
-   flex-direction: column;
-    position: absolute;
-    bottom: 0;
-} */
-
-.account {
-    flex-direction: column;
-    align-items: flex-end;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 
 
@@ -79,7 +69,7 @@ header {
     /* width: calc(100vw - 400px); */
     height: 80px;
     background-color: #080b12;
-    
+
 }
 
 
@@ -89,17 +79,15 @@ header {
 MAIN
 ****************************** */
 
-.hr+mn{
 
-}
 
 
 main {
     /* height: calc(100vh - 180px); */
-    width: 100%;
+
     background-color: yellow;
     padding: 10px;
-    width: calc(100vw - 100px);
+
 }
 
 .menù ul {
@@ -200,6 +188,42 @@ footer {
     margin: auto 0;
 }
 
-.col-25 img{
+.col-25 img {
     width: 30%;
 }
+
+/* ******************************
+MEDIA QUERY
+  ****************************** */
+
+
+/* Tablet */
+@media screen and (max-width: 480px) {
+
+  
+
+    .sidebar span {
+        display: none;
+    }
+
+    .lungo{
+        display: block;
+    }
+
+ }
+
+
+/* landscape */
+
+@media screen and (max-width: 769px) {
+
+    .sidebar {
+        width: 400px;
+    }
+
+
+
+}
+  
+
+    
